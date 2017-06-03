@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+        <default>
+            <reference name="head">
+                <action method="removeItem"> <type>skin_css</type> <name>css/styles.css</name> </action>
+                <action method="addItem"><type>skin_css</type><name>css/bootstrap.css</name><params/></action>
+                <action method="addItem"><type>skin_css</type><name>css/bootstrap-theme.css</name><params/></action>
+                <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
+
+                <action method="addItem"><type>skin_js</type><name>js/jquery-3.2.1.min.js</name><params/></action>
+                <action method="addItem"><type>skin_js</type><name>js/jquery.scripts.js</name><params/></action>
+                <action method="addItem"><type>skin_js</type><name>js/bootstrap.js</name><params/></action>
+
+                <action method="addItem"> <type>skin_css</type> <stylesheet>css/styles.css</stylesheet> </action>
+            </reference>
+        </default>
+
+    <cms_index_index>
+        <reference name="content">
+            <block type="core/template" name="banners" template="page/home/banners.phtml"/>
+        </reference>
+        <reference name="footer">
+            <block type="core/template" name="footer.information" before="-"
+                   template="page/home/footer/information.phtml"/>
+            <block type="core/template" name="footer.myaccount" after="footer.information"
+                   template="page/home/footer/myaccount.phtml"/>
+            <block type="core/template" name="footer.whybuy" after="footer.myaccount"
+                   template="page/home/footer/whybuy.phtml"/>
+            <block type="core/template" name="footer.contact" after="footer.whybuy"
+                   template="page/home/footer/contact.phtml"/>
+        </reference>
+    </cms_index_index>
+</layout>
