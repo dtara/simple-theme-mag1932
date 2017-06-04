@@ -29,29 +29,37 @@
 ?>
 <div class="header-container">
     <div class="header">
-        <?php echo $this->getChildHtml('topLinks') ?>
-        <?php echo $this->getChildHtml('store_language') ?>
-        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+        <div class="toplinks-wrapper">
+            <?php echo $this->getChildHtml('topLinks') ?>
+            <?php echo $this->getChildHtml('store_language') ?>
+        </div>
+        <div class="main-menu-container">
+            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?><?php echo $this->getAdditionalHtml() ?></p>
 
-        <div class="main-nav">
-            <ul>
+            <div class="main-nav">
+                <ul class="">
 
-                <li class="item"><a href="#"><span>Home</span></a></li>
-                <li class="item"><a href="#"><span>About</span></a></li>
-                <li class="item"><a href="#"><span>Custom Service</span></a></li>
-                <li class="item"><a href="#"><span>Site Map</span></a></li>
-                <li class="item"><a href="#"><span>Search Terms</span></a></li>
-                <li class="item"><a href="#"><span>Contacts</span></a></li>
-            </ul>
+                    <li class="item "><a href="#"><span>Home</span></a></li>
+                    <li class="item"><a href="#"><span>About</span></a></li>
+                    <li class="item"><a href="#"><span>Custom Service</span></a></li>
+                    <li class="item"><a href="#"><span>Site Map</span></a></li>
+                    <li class="item"><a href="#"><span>Search Terms</span></a></li>
+                    <li class="item"><a href="#"><span>Contacts</span></a></li>
+                </ul>
+            </div>
         </div>
 
 
-
-        <?php if ($this->getIsHomePage()):?>
-        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-        <?php else:?>
-        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-        <?php endif?>
+        <?php if ($this->getIsHomePage()): ?>
+            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>"
+                                                                                  title="<?php echo $this->getLogoAlt() ?>"
+                                                                                  class="logo"><img
+                            src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
+        <?php else: ?>
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
+               class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img
+                        src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a>
+        <?php endif ?>
         <div class="quick-access">
             <?php echo $this->getChildHtml('topSearch') ?>
         </div>

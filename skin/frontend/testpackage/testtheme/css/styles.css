@@ -1,3 +1,42 @@
-h1{
-    color: red;
+body{
+    background-color: #eaeaea;
+    color: #EFEFEF;
+}
+.main-menu-container{
+    background-color: #535355;
+}
+.main-menu-container p{
+
+}
+.toplinks-wrapper, .main-menu-container{
+    width: 100%;
+    display: inline-block;
+}
+.toplinks-wrapper .links.nav.nav-pills, .main-menu-container{
+    display: block;
+    float: left;
+
+}
+.toplinks-wrapper .form-language{
+    float: right;
+}
+.store-language-wrapper{
+    float: right;
+}
+.main-nav ul{
+    display:inline-block;
+    text-align: left;
+    }
+.main-nav a{
+    color: #EFEFEF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-nav li{
+    display: inline-block;
+    margin: 5px;
+    list-style-type: none;
+}
+.main-nav a:hover{
+text-decoration: underline;
 }
