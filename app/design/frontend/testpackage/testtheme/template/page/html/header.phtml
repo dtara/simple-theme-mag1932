@@ -29,14 +29,16 @@
 ?>
 <div class="header-container">
     <div class="header">
-        <div class="toplinks-wrapper">
+        <div class="toplinks-wrapper ">
             <?php echo $this->getChildHtml('topLinks') ?>
             <?php echo $this->getChildHtml('store_language') ?>
         </div>
-        <div class="main-menu-container">
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?><?php echo $this->getAdditionalHtml() ?></p>
+    </div>
+</div>
+        <div class="main-menu-container nav nav-pills clearfix">
+            <p class="welcome-msg btn-group"><?php echo $this->getChildHtml('welcome') ?><?php echo $this->getAdditionalHtml() ?></p>
 
-            <div class="main-nav">
+            <div class="main-navs">
                 <ul class="">
 
                     <li class="item "><a href="#"><span>Home</span></a></li>
