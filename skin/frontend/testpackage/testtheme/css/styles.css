@@ -52,8 +52,8 @@ ul.nav>li>a:hover {}
     min-height: 50px;
 }
 
-.welcome-msg {
-    color: #fff;
+.welcome {
+    color: #FFFFFF;
     float: left;
     padding-left: 20px;
 
@@ -78,12 +78,21 @@ ul.nav>li>a:hover {}
 
 .logo{
     float: left;
-    
+}
+.quick-access{
+float:right;
+
 }
 .form-search{
     float: right;
-}
 
+}
+.input-text{
+
+}
 /*
 footer
 */
+.FOOTER{
+
+}

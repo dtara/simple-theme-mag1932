@@ -21,7 +21,7 @@
             <block type="core/template" name="banners" template="page/home/banners.phtml"/>
         </reference>
         <reference name="footer">
-            <block type="core/template" name="footer.information" before="-"
+            <block type="core/template" name="/footer.information" before="-"
                    template="page/home/footer/information.phtml"/>
             <block type="core/template" name="footer.myaccount" after="footer.information"
                    template="page/home/footer/myaccount.phtml"/>
