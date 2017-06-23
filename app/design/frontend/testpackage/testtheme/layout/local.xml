@@ -3,11 +3,13 @@
 
         <default>
             <reference name="head">
+                
+                <action method="addLinkRel"><rel>stylesheet</rel><href>https://fonts.googleapis.com/css?family=Open+Sans:400,600,700</href></action>
+                
                 <action method="removeItem"> <type>skin_css</type> <name>css/styles.css</name> </action>
                 <action method="addItem"><type>skin_css</type><name>css/bootstrap.css</name><params/></action>
                 <action method="addItem"><type>skin_css</type><name>css/bootstrap-theme.css</name><params/></action>
                 <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
-
                 <action method="addItem"><type>skin_js</type><name>js/jquery-3.2.1.min.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.scripts.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/bootstrap.js</name><params/></action>
@@ -20,8 +22,10 @@
         <reference name="content">
             <block type="core/template" name="banners" template="page/home/banners.phtml"/>
         </reference>
+        
+<!--
         <reference name="footer">
-            <block type="core/template" name="/footer.information" before="-"
+                   <block type="core/template" name="/footer.information" before="-"
                    template="page/home/footer/information.phtml"/>
             <block type="core/template" name="footer.myaccount" after="footer.information"
                    template="page/home/footer/myaccount.phtml"/>
@@ -30,5 +34,10 @@
             <block type="core/template" name="footer.contact" after="footer.whybuy"
                    template="page/home/footer/contact.phtml"/>
         </reference>
+-->
+         <reference name="footer">
+            <block type="core/template" name="/footer" before="-"
+                   template="page/home/footer/footer.phtml"/>
+         </reference>
     </cms_index_index>
 </layout>

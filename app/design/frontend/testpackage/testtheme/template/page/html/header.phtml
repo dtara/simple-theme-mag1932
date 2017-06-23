@@ -29,19 +29,17 @@
 ?>
 <div class="header-container">
     <div class="header">
-        <div class="toplinks-wrapper ">
-            <?php echo $this->getChildHtml('topLinks') ?>
+        <div class="toplinks-wrapper">
+            <div><?php echo $this->getChildHtml('topLinks') ?></div>
             <?php echo $this->getChildHtml('store_language') ?>
         </div>
-    </div>
-</div>
         <div class="main-menu-container">
-            <span class="welcome">Welcome to our online store!</span>
-<!--            <p class="welcome-msg btn-group">--><?php //echo $this->getChildHtml('welcome') ?><!----><?php //echo $this->getAdditionalHtml() ?><!--</p>-->
-
-            <div class="main-navs nav nav-pills">
-                <ul >
-
+            <div>
+                <span class="welcome-msg btn-group"><?php echo $this->getChildHtml('welcome') ?><?php echo $this->getAdditionalHtml() ?></span>
+            </div>
+            <div class="main-navs">
+               
+                <ul class="main-navs-list">
                     <li class="item "><a href="#"><span>Home</span></a></li>
                     <li class="item"><a href="#"><span>About</span></a></li>
                     <li class="item"><a href="#"><span>Custom Service</span></a></li>
@@ -51,18 +49,10 @@
                 </ul>
             </div>
         </div>
-
-        <?php if ($this->getIsHomePage()): ?>
-            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>"
-                                                                                  title="<?php echo $this->getLogoAlt() ?>"
-                                                                                  class="logo"><img
-                            src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a></h1>
-        <?php else: ?>
-            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"
-               class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img
-                        src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/></a>
-        <?php endif ?>
         <div class="quick-access">
+            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo">
+                <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>"/>
+            </a>
             <?php echo $this->getChildHtml('topSearch') ?>
         </div>
         <?php echo $this->getChildHtml('topContainer'); ?>
