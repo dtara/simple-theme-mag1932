@@ -283,7 +283,7 @@ a:hover {
     float: right;
     width: 84%;
     padding: 11px;
-    background-color: #dfdfe1;
+    background-color: #f2f2f2;
 }
 .quick-access .form-search .button {
     float: right;
@@ -329,7 +329,11 @@ a:hover {
 }
 
 /* dropdown menu */
-
+.nav-1:before, .nav-2:before, .nav-3:before{
+    float: right;
+    padding-left: 9px; 
+    content:"\25be";
+}
 .level0 {
     margin-right: 30px;
 }
@@ -343,7 +347,7 @@ a:hover {
     color: #535355;
 }
 .level-top ul {
-    display: none;
+/*    display: none;*/
     background-color: #f3f3f3;
     position: absolute;
     list-style-type: none;
@@ -351,19 +355,7 @@ a:hover {
     margin-left: -20px;
     margin-top: 12px;
 }
-.nav-1:before{
-    float: right;
-    padding-left: 9px; 
-    content:"\25be";
-}.nav-2:before{
-    float: right;
-       padding-left: 9px;  
-    content:"\25be";
-}.nav-3:before{
-    float: right;
-        padding-left: 9px; 
-    content:"\25be";
-}
+
 .level-top ul a {
     min-height: 40px;
     min-width: 145px;
@@ -379,12 +371,29 @@ a:hover {
     text-decoration: none;
     display: block;
     text-align: left;
+/*  position: relative;*/
 }
 .level-top ul a:hover {
     background-color: #6fcfbc;
+
 }
 .level-top:hover .level0 {
     display: block;
+}
+.level1 .level2 a{
+/*
+     margin-left: 145px;
+    margin-top: 20px;
+*/
+    display: none;
+    background-color:  #dcdcdc;
+ 
+    
+} 
+.level1:hover .level2 a{
+    display: inline-block;
+
+  
 }
 
 /*******EMPTY STROKE*/
