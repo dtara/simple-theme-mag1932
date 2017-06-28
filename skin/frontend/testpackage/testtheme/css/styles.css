@@ -137,7 +137,10 @@ table {
 /*reser files end*/
 
 .cms-index-index {
-    background-color: #ececec;
+/*    background-color: #ececec;*/
+     background-image: url("../images/banners/back.jpg");
+     background-repeat: repeat;
+}
 }
 img {
     max-width: 100%;
