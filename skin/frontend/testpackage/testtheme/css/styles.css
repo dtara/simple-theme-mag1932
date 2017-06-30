@@ -347,7 +347,7 @@ a:hover {
     color: #535355;
 }
 .level-top ul {
-/*    display: none;*/
+    display: none;
     background-color: #f3f3f3;
     position: absolute;
     list-style-type: none;
